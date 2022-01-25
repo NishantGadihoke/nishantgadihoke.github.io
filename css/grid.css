@@ -1,0 +1,98 @@
+/* Used from P02 in IAT 339 */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.container.fluid {
+    width: 100%;
+    max-width: 100%;
+    column-gap: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.container .col-1 {
+    grid-column: span 1;
+}
+
+.container .col-2 {
+    grid-column: span 2;
+}
+
+.container .col-3 {
+    grid-column: span 3;
+}
+
+.container .col-4 {
+    grid-column: span 4;
+}
+
+.container .col-5 {
+    grid-column: span 5;
+}
+
+.container .col-6 {
+    grid-column: span 6;
+}
+
+.container .col-7 {
+    grid-column: span 7;
+}
+
+.container .col-8 {
+    grid-column: span 8;
+}
+
+.container .col-9 {
+    grid-column: span 9;
+}
+
+.container .col-10 {
+    grid-column: span 10;
+}
+
+.container .col-12 {
+    grid-column: span 12;
+}
+/* 
+.container [class^="col-"] {
+    position: relative;
+} */
+
+@media all and (max-width: 850px) {
+    .container [class^="col-"] {
+        grid-column: span 12;
+    }
+    
+    .container .col-sm-3 {
+        grid-column: span 3;
+    }
+
+    .container .col-sm-4 {
+        grid-column: span 4;
+    }
+
+    .container .col-sm-6 {
+        grid-column: span 6;
+    }
+
+    .container .col-sm-8 {
+        grid-column: span 8;
+    }
+
+    .container .col-sm-9 {
+        grid-column: span 9;
+    }
+
+}
