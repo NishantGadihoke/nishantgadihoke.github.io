@@ -334,16 +334,27 @@ p.current-status {
     margin-right: 2rem;
 }
 
-p.current-status.available::before {
+p.current-status::before {
     content: '';
     height: 5px;
     width: 5px;
-    background: #34C759;
     border-radius: 100%;
     position: absolute;
     display: block;
     top: calc(50% - 0.175rem);
     left: -0.85rem;
+}
+
+p.current-status.available::before {
+    background: #34C759;
+}
+
+p.current-status.not-available::before { 
+    background: #FF3B30;
+}
+
+p.current-status.neutral::before { 
+    background: #ff9500;
 }
 
 #hero h2 {
@@ -688,7 +699,7 @@ main#style-guide .bordered {
     }
     #hero a.button {
         display: block;
-        width: 40%;
+        width: 32.5%;
         margin-bottom: 2rem;
     }
     #hero h2 {
@@ -702,5 +713,12 @@ main#style-guide .bordered {
         width: 100%;
         max-width: 100%;
         margin-left: 0;
+    }
+    section#contact {
+        padding: 2.5rem 1rem;
+    }
+    .back-to-top {
+        bottom: 2rem;
+        right: 2rem;
     }
 }
