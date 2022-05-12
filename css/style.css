@@ -331,7 +331,7 @@ p.current-status {
     margin: 2rem 0;
     position: relative;
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 1.75rem;
 }
 
 p.current-status::before {
@@ -386,6 +386,10 @@ p.current-status.neutral::before {
 
 #hero h3 .organization.searchie a {
     color: #FF4D46;
+}
+
+#hero h3 .organization.intuit a {
+    color: #365ebf;
 }
 
 h3.section-heading {
@@ -687,15 +691,23 @@ main#style-guide .bordered {
     .project-item .project-item-text ul.project-tags li {
         margin: 0.25rem;
     }
+    section#work .col-6:not(:last-of-type) .project-item {
+        margin-bottom: 3rem;
+        display: block;
+    }
+    section#work {
+        /* padding-bottom: 0; */
+    }
     #contact p.large {
         width: 100%;
         font-size: 1.5rem;
     }
     section#hero {
-        padding: 1rem;
+        padding: 0.25rem;
     }
     p.current-status {
         margin-bottom: 1.5rem;
+        margin-left: 0.85rem;
     }
     #hero a.button {
         display: block;
@@ -705,7 +717,6 @@ main#style-guide .bordered {
     #hero h2 {
         font-size: 1.5rem;
     }
-
     #hero h3 {
         margin: 2rem 0 0 0;
     }
@@ -720,5 +731,8 @@ main#style-guide .bordered {
     .back-to-top {
         bottom: 2rem;
         right: 2rem;
+    }
+    .project-item .project-item-image {
+        height: auto;
     }
 }
