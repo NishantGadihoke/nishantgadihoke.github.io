@@ -22,6 +22,10 @@
     width: 100%;
 }
 
+.row.double-spaced {
+    column-gap: 2rem;
+}
+
 .container .col-1 {
     grid-column: span 1;
 }

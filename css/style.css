@@ -47,12 +47,16 @@ header a:hover, header a:active, footer a:hover, footer a:active {
 
 /* Project card styling */
 
+.project-item .project-item-image.intuit {
+    background: #5e7fcc;
+}
+
 .project-item .project-item-image.searchie {
     background: #FF9090;
 }
 
 .project-item .project-item-image.oswald-labs {
-    background: #AEDEFC;
+    background: #dfc7a7;
 }
 
 .project-item .project-item-image.planta {
@@ -72,6 +76,11 @@ header a:hover, header a:active, footer a:hover, footer a:active {
     background: #FFF;
     border-radius: 4px;
     transition: all 0.1s ease;
+}
+
+.project-item.highlighted {
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .project-item:not(:last-of-type) {
@@ -112,6 +121,10 @@ header a:hover, header a:active, footer a:hover, footer a:active {
 
 .project-item .project-item-text {
     padding: 1rem 0;
+}
+
+.project-item.highlighted .project-item-text {
+    padding: 3.5rem 0 1rem 0;
 }
 
 .project-item .project-item-text h4.project-name {
@@ -331,7 +344,7 @@ p.current-status {
     margin: 2rem 0;
     position: relative;
     display: inline-block;
-    margin-right: 1.75rem;
+    margin-right: 1.25rem;
 }
 
 p.current-status::before {
@@ -690,6 +703,12 @@ main#style-guide .bordered {
     }
     .project-item .project-item-text ul.project-tags li {
         margin: 0.25rem;
+    }
+    .project-item.highlighted {
+        box-shadow: none;
+    }
+    .project-item.highlighted .project-item-text {
+        padding: 1rem 0;
     }
     section#work .col-6:not(:last-of-type) .project-item {
         margin-bottom: 3rem;
